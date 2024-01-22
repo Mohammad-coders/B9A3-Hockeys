@@ -1,0 +1,19 @@
+.Manrope-font{
+    font-family: 'Manrope', sans-serif;
+}
+:root{
+    --title-color: #131318;
+    --description-color: rgba(19, 19, 24, 0.60);
+}
+.title-primary{
+    color: var(--title-color);
+    font-size: 29px;
+    font-weight: 800;
+    margin-top: 106px;
+    margin-bottom: 19px;
+}
+.description-primary{
+    color: var(--description-color);
+    font-size: 13px;
+    font-weight: 500;
+}
