@@ -29,7 +29,7 @@
                       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </div>
                     <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                      <li><a>Home</a></li>
+                      <li><a class="text-[#FF4240]">Home</a></li>
                       <li>
                         <a>About</a>
                       </li>
@@ -43,7 +43,7 @@
                 </div>
                 <div class="navbar-center hidden lg:flex">
                   <ul class="menu menu-horizontal px-1">
-                    <li><a>Home</a></li>
+                    <li><a class="text-[#FF4240]">Home</a></li>
                     <li>
                         <summary>About</summary>
                     </li>
@@ -53,12 +53,12 @@
                   </ul>
                 </div>
                 <div class="navbar-end">
-                    <i class="fa-solid fa-magnifying-glass mr-3"></i><a class="btn bg-[#FF4240] text-white">Get Ticket</a>
+                    <i class="fa-solid fa-magnifying-glass mr-3 invisible lg:visible"></i><a class="btn bg-[#FF4240] text-white">Get Ticket</a>
                 </div>
               </div>
         </nav>
         <!-- sliders -->
-        <div class="carousel w-full">
+        <div class="carousel w-full lg:relative">
             <div id="slide1" class="carousel-item relative w-full">
                 <img src="Images/1.png" class="w-full rounded-xl" />
                 <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -67,13 +67,17 @@
                 </div>
             </div>
             <div id="slide2" class="carousel-item relative w-full">
-                <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg"
+                <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg"
                     class="w-full rounded-xl" />
                 <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                     <a href="#slide1" class="btn btn-circle text-white bg-black">❮</a>
                     <a href="#slide2" class="btn btn-circle text-white bg-black">❯</a>
                 </div>
             </div>
+        </div>
+        <div class="bg-[#131318] p-6 rounded-xl lg:absolute right-1/4 top-1/2">
+            <h3 class="text-white text-xl font-extrabold">Meet all the heroes from the field</h3>
+            <p class="text-[#FFFFFF99] w-[406px] mt-3">Step into the realm of champions as you get acquainted with the inspiring individuals who define our field.</p>
         </div>
     </header>
     <main class="mx-7 lg:mx-52">
@@ -88,9 +92,9 @@
             <!-- radial progress -->
             <div class="flex flex-col text-center lg:flex-row mt-16 justify-around">
                 <div>
-                    <div class="radial-progress text-primary text-rose-600 text-2xl font-extrabold " style="--value:87;"
+                    <div class="radial-progress text-primary text-rose-600 text-2xl font-extrabold rotate-180" style="--value:87;"
                         role="progressbar">
-                        87%
+                        <span class="text-[#131318] -rotate-180">87%</span>
                     </div>
                     <div>
                         <h4 class="title-primary text-base font-semibold mt-5">Prayer Facility</h4>
@@ -100,9 +104,9 @@
                     </div>
                 </div>
                 <div>
-                    <div class="radial-progress text-primary text-teal-400 text-2xl font-extrabold " style="--value:95;"
+                    <div class="radial-progress text-primary text-teal-400 text-2xl font-extrabold rotate-180 " style="--value:95;"
                         role="progressbar">
-                        95%
+                        <span class="text-[#131318] -rotate-180">95%</span>
                     </div>
                     <div>
                         <h4 class="title-primary text-base font-semibold mt-5">Experienced Coach</h4>
@@ -112,9 +116,9 @@
                     </div>
                 </div>
                 <div>
-                    <div class="radial-progress text-primary text-yellow-500 text-2xl font-extrabold "
+                    <div class="radial-progress text-primary text-yellow-500 text-2xl font-extrabold rotate-180"
                         style="--value:90;" role="progressbar">
-                        90%
+                        <span class="text-[#131318] -rotate-180">90%</span>
                     </div>
                     <div>
                         <h4 class="title-primary text-base font-semibold mt-5">Senior Player</h4>
@@ -123,9 +127,9 @@
                     </div>
                 </div>
                 <div>
-                    <div class="radial-progress text-primary text-blue-400 text-2xl font-extrabold " style="--value:80;"
+                    <div class="radial-progress text-primary text-blue-400 text-2xl font-extrabold rotate-180" style="--value:80;"
                         role="progressbar">
-                        80%
+                        <span class="text-[#131318] -rotate-180">80%</span>
                     </div>
                     <div>
                         <h4 class="title-primary text-base font-semibold mt-5">Training Ground</h4>
@@ -273,6 +277,76 @@
                         <span class="text-[#FF4240] font-extrabold text-lg">Price - $22.00</span>
                         <span class="ml-10 primary-color text-xs font-medium">Delivery Fee : Free</span>
                     </div>
+                </div>
+            </div>
+        </section>
+        <!-- client question -->
+        <section>
+            <div class="text-center">
+                <h3 class="title-primary">Clients Question</h3>
+                <p class="description-primary">Have questions about our services or interested in collaboration? Explore our 'Clients' section for answers. We value your inquiries and strive to provide comprehensive information, ensuring a seamless and informed experience.</p>
+            </div>
+            <div class="flex-1 lg:flex gap-8">
+                <div class="mt-10">
+                    <img src="Images/11.png" alt="">
+                </div>
+                <div class="mt-10">
+                    <div class="join join-vertical w-full">
+                        <div class="collapse collapse-arrow join-item border border-base-300">
+                          <input type="radio" name="my-accordion-4" checked="checked" /> 
+                          <div class="collapse-title text-xl font-medium">
+                            Our Equipment
+                          </div>
+                          <div class="collapse-content"> 
+                            <p>Unleash peak performance with our cutting-edge gear, meticulously crafted for excellence on the field.</p>
+                          </div>
+                        </div>
+                        <div class="collapse collapse-arrow join-item border border-base-300">
+                          <input type="radio" name="my-accordion-4" checked="checked" /> 
+                          <div class="collapse-title text-xl font-medium">
+                            Hockey Training
+                          </div>
+                          <div class="collapse-content"> 
+                            <p>Immerse in tailored programs that hone skills and foster a winning mindset, ensuring peak performance on the ice.</p>
+                          </div>
+                        </div>
+                        <div class="collapse collapse-arrow join-item border border-base-300">
+                          <input type="radio" name="my-accordion-4" checked="checked" /> 
+                          <div class="collapse-title text-xl font-medium">
+                            Private Lessons
+                          </div>
+                          <div class="collapse-content"> 
+                            <p>Unlock your full potential with one-on-one coaching, tailored to refine skills and accelerate your hockey journey</p>
+                          </div>
+                        </div>
+                        <div class="collapse collapse-arrow join-item border border-base-300">
+                          <input type="radio" name="my-accordion-4" checked="checked" /> 
+                          <div class="collapse-title text-xl font-medium">
+                            Ski Touring
+                          </div>
+                          <div class="collapse-content"> 
+                            <p>Experience the thrill of uncharted slopes with our guided tours, blending adventure and nature for an unforgettable skiing escapade.</p>
+                          </div>
+                        </div>
+                        <div class="collapse collapse-arrow join-item border border-base-300">
+                          <input type="radio" name="my-accordion-4" /> 
+                          <div class="collapse-title text-xl font-medium">
+                            Booking
+                          </div>
+                          <div class="collapse-content"> 
+                            <p>Seamless reservations await - secure your spot with ease and embark on unforgettable journeys with just a few clicks.</p>
+                          </div>
+                        </div>
+                        <div class="collapse collapse-arrow join-item border border-base-300">
+                          <input type="radio" name="my-accordion-4" /> 
+                          <div class="collapse-title text-xl font-medium">
+                            Pricings
+                          </div>
+                          <div class="collapse-content"> 
+                            <p>Discover our straightforward pricing structures, ensuring clarity and flexibility for a personalized and memorable adventure.</p>
+                          </div>
+                        </div>
+                      </div>
                 </div>
             </div>
         </section>
